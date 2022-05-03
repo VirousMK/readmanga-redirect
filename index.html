@@ -22,7 +22,7 @@
 	let input = document.createElement('input');
 	input.type = 'text';
 	input.name = 'q';
-	input.value = get.q;
+	input.value = decodeURIComponent(get.q);
 
 	form.appendChild(input);
 	document.body.appendChild(form);
